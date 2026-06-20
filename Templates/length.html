@@ -10,14 +10,17 @@
         <label for="length">Enter the value you wish to convert</label>
         <input type="text" id="length" name="length">
         <select name="From" >
-            <option value="" select disabled> choose the unit you wish to convert from</option>
+            <option value="" selected disabled> choose the unit you wish to convert from</option>
             <option value="centimeter">centimeter</option>
             <option value="meters">meter</option>
             <option value="kilometer">kilometer</option>
 
         </select>
         <button type="submit">Convert</button>
-        <p>{{.Result}}</p>
+        {{if .Result}}
+            <p>Result: {{.Result}}</p>
+        {{end}}
+        
     </form>
     
 </body>
