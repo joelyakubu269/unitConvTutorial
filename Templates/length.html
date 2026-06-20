@@ -8,8 +8,15 @@
 <body>
     <form action="/length" method="post">
         <label for="length">Enter the value you wish to convert</label>
-        <input type="text" id="length" name="length">
+        <input type="text" id="length" name="value">
         <select name="From" >
+            <option value="" selected disabled> choose the unit you wish to convert from</option>
+            <option value="centimeter">centimeter</option>
+            <option value="meters">meter</option>
+            <option value="kilometer">kilometer</option>
+
+        </select>
+         <select name="To" >
             <option value="" selected disabled> choose the unit you wish to convert from</option>
             <option value="centimeter">centimeter</option>
             <option value="meters">meter</option>
